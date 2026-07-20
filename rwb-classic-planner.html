@@ -24,9 +24,9 @@
     border:2px solid transparent; background:rgba(255,255,255,.10);}
   .chip b{display:block; font-size:23px; font-weight:800;}
   .chip span{display:block; font-size:10px; text-transform:uppercase; letter-spacing:.05em; opacity:.85; margin-top:2px;}
-  .chip.red{background:rgba(209,51,46,.22); border-color:var(--red);} 
+  .chip.red{background:rgba(209,51,46,.22); border-color:var(--red);}
   .chip.white{background:rgba(233,237,242,.20); border-color:#c9d3e0;}
-  .chip.blue{background:rgba(31,95,209,.24); border-color:var(--blue);} 
+  .chip.blue{background:rgba(31,95,209,.24); border-color:var(--blue);}
   .chip.over{animation:pulse 1s infinite;}
   @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(255,80,60,.7);}50%{box-shadow:0 0 0 5px rgba(255,80,60,0);}}
   .status{margin-top:9px; font-size:13px; font-weight:600; padding:8px 10px; border-radius:9px; line-height:1.35;}
@@ -46,7 +46,7 @@
   .hnum{font-size:20px; font-weight:800; width:52px;}
   .hnum small{display:block; font-size:10px; font-weight:600; color:var(--muted); text-transform:uppercase; letter-spacing:.04em;}
   .hmeta{flex:1; font-size:12px; color:var(--muted); display:flex; gap:14px;}
-  .hmeta b{color:var(--ink);} 
+  .hmeta b{color:var(--ink);}
   .lock{width:44px; height:34px; border-radius:9px; border:1px solid var(--line); background:#fff;
     display:flex; align-items:center; justify-content:center; font-size:17px;}
   .hole.locked .lock{background:#0a2540; color:#fff; border-color:#0a2540;}
@@ -70,7 +70,7 @@
   .sheet h2{margin:0 0 4px; font-size:17px;}
   .sheet p{margin:0 0 12px; font-size:12px; color:var(--muted);}
   table{width:100%; border-collapse:collapse; font-size:13px;}
-  th,td{padding:5px 4px; text-align:center; border-bottom:1px solid var(--line);} 
+  th,td{padding:5px 4px; text-align:center; border-bottom:1px solid var(--line);}
   th{font-size:10px; text-transform:uppercase; color:var(--muted); letter-spacing:.04em;}
   td input{width:100%; max-width:60px; border:1px solid var(--line); border-radius:7px; padding:6px 2px;
     text-align:center; font-size:14px;}
@@ -127,7 +127,7 @@
 
 <script>
 "use strict";
-const LS_KEY = "rwbClassicPeacockV1";
+const LS_KEY = "rwbClassicPeacockV2";
 const COLORS = ["red","white","blue"];
 const LABEL = {red:"Red", white:"White", blue:"Blue"};
 
@@ -135,24 +135,24 @@ const LABEL = {red:"Red", white:"White", blue:"Blue"};
 const DEFAULT = {
   name: "Peacock Gap — R/W/B Classic",
   holes: [
-    {hole:1,  par:4, hcp:3,  red:337, white:376, blue:404, color:null, locked:false},
-    {hole:2,  par:4, hcp:1,  red:270, white:382, blue:393, color:null, locked:false},
-    {hole:3,  par:3, hcp:7,  red:121, white:155, blue:170, color:null, locked:false},
-    {hole:4,  par:5, hcp:13, red:403, white:488, blue:501, color:null, locked:false},
-    {hole:5,  par:4, hcp:5,  red:306, white:360, blue:381, color:null, locked:false},
-    {hole:6,  par:3, hcp:11, red:113, white:148, blue:171, color:null, locked:false},
-    {hole:7,  par:4, hcp:9,  red:213, white:276, blue:287, color:null, locked:false},
+    {hole:1,  par:4, hcp:5,  red:337, white:376, blue:404, color:null, locked:false},
+    {hole:2,  par:4, hcp:3,  red:270, white:365, blue:393, color:null, locked:false},
+    {hole:3,  par:3, hcp:9,  red:121, white:155, blue:170, color:null, locked:false},
+    {hole:4,  par:5, hcp:13, red:403, white:468, blue:505, color:null, locked:false},
+    {hole:5,  par:4, hcp:1,  red:306, white:360, blue:381, color:null, locked:false},
+    {hole:6,  par:3, hcp:7,  red:113, white:148, blue:171, color:null, locked:false},
+    {hole:7,  par:4, hcp:15, red:213, white:244, blue:287, color:null, locked:false},
     {hole:8,  par:5, hcp:17, red:394, white:462, blue:472, color:null, locked:false},
-    {hole:9,  par:4, hcp:15, red:295, white:335, blue:348, color:null, locked:false},
+    {hole:9,  par:4, hcp:11, red:295, white:335, blue:355, color:null, locked:false},
     {hole:10, par:3, hcp:18, red:103, white:122, blue:131, color:null, locked:false},
-    {hole:11, par:4, hcp:2,  red:317, white:378, blue:386, color:null, locked:false},
-    {hole:12, par:5, hcp:8,  red:420, white:515, blue:530, color:null, locked:false},
-    {hole:13, par:3, hcp:10, red:132, white:173, blue:190, color:null, locked:false},
-    {hole:14, par:5, hcp:6,  red:395, white:464, blue:484, color:null, locked:false},
+    {hole:11, par:4, hcp:2,  red:317, white:373, blue:386, color:null, locked:false},
+    {hole:12, par:5, hcp:8,  red:420, white:470, blue:520, color:null, locked:false},
+    {hole:13, par:3, hcp:6,  red:132, white:173, blue:190, color:null, locked:false},
+    {hole:14, par:5, hcp:16, red:395, white:464, blue:484, color:null, locked:false},
     {hole:15, par:4, hcp:12, red:289, white:323, blue:356, color:null, locked:false},
-    {hole:16, par:3, hcp:14, red:121, white:129, blue:148, color:null, locked:false},
-    {hole:17, par:4, hcp:16, red:248, white:300, blue:320, color:null, locked:false},
-    {hole:18, par:4, hcp:4,  red:351, white:406, blue:429, color:null, locked:false}
+    {hole:16, par:3, hcp:10, red:121, white:129, blue:155, color:null, locked:false},
+    {hole:17, par:4, hcp:14, red:248, white:300, blue:320, color:null, locked:false},
+    {hole:18, par:4, hcp:4,  red:351, white:406, blue:406, color:null, locked:false}
   ]
 };
 
